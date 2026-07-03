@@ -3,7 +3,7 @@ const cors = require('cors');
 const path = require('path');
 const { pool } = require('./config/database');
 
-const authRoutes = require('./routes/auth');
+const authRoutes = require('./routes/auth.js');
 const codingRoutes = require('./routes/codingRoutes');
 const analyticsRoutes = require('./routes/analyticsRoutes');
 const personalRoutes = require('./routes/personal');
