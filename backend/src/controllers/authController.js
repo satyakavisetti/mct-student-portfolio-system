@@ -5,8 +5,10 @@ const { query } = require('../config/database');
 const MSSID_REGEX = /^MSS\d{7}$/;
 const ALLOWED_COLLEGES = new Set(['Vasavi','CBIT','KMIT','Vardhaman','Narayanamma','BVRIT','IIIT Hyderabad','Other']);
 
+const getJwtSecret = () => process.env.JWT_SECRET || 'mct-dev-jwt-secret-change-in-production';
+
 const generateToken = (id, mssid, role) => {
-  return jwt.sign({ id, mssid, role }, process.env.JWT_SECRET, {
+  return jwt.sign({ id, mssid, role }, getJwtSecret(), {
     expiresIn: process.env.JWT_EXPIRES_IN || '7d',
   });
 };

@@ -5,7 +5,6 @@ const launchBrowser = async () => {
 
   const launchOptions = {
     headless: true,
-    channel: 'chrome',
     args: [
       '--disable-blink-features=AutomationControlled',
       '--disable-dev-shm-usage',

@@ -30,8 +30,24 @@ const corsOptions = {
   allowedHeaders: ['Content-Type', 'Authorization'],
 };
 
+const allowedOrigins = [
+  process.env.FRONTEND_URL,
+  'http://localhost:5173',
+  'http://127.0.0.1:5173',
+  'https://localhost:5173',
+].filter(Boolean);
+
+const corsOrigin = (origin, callback) => {
+  if (!origin || allowedOrigins.includes(origin) || /^https:\/\/.*\.onrender\.com$/.test(origin)) {
+    callback(null, true);
+    return;
+  }
+
+  callback(null, false);
+};
+
 if (process.env.NODE_ENV === 'production') {
-  corsOptions.origin = process.env.FRONTEND_URL || 'https://your-production-url.com';
+  corsOptions.origin = corsOrigin;
 } else {
   corsOptions.origin = (origin, callback) => callback(null, true);
 }

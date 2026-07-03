@@ -1,6 +1,8 @@
 const jwt = require('jsonwebtoken');
 const { query } = require('../config/database');
 
+const getJwtSecret = () => process.env.JWT_SECRET || 'mct-dev-jwt-secret-change-in-production';
+
 const protect = async (req, res, next) => {
   try {
     let token;
@@ -13,7 +15,7 @@ const protect = async (req, res, next) => {
       return res.status(401).json({ success: false, message: 'Not authorized. No token provided.' });
     }
 
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    const decoded = jwt.verify(token, getJwtSecret());
 
     const result = await query(
       'SELECT id, mssid, role, is_active FROM students WHERE id = $1',

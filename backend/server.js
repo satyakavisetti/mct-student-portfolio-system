@@ -1,5 +1,6 @@
 ﻿require('dotenv').config();
 const app = require('./src/app');
+const { ensureDefaultUsers } = require('./src/config/authBootstrap');
 const {
   startCodingSyncCron,
   runInitialSync,
@@ -13,6 +14,7 @@ const startServer = (port) => {
     console.log(`📡 Health: http://localhost:${port}/api/health\n`);
 
     try {
+      await ensureDefaultUsers();
       await runInitialSync();
       startCodingSyncCron();
 
