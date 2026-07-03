@@ -1,39 +1,35 @@
-const { Pool } = require('pg');
-require('dotenv').config();
+const { Pool } = require("pg");
+require("dotenv").config();
 
 const pool = new Pool({
-  host: process.env.DB_HOST || 'localhost',
-  port: parseInt(process.env.DB_PORT) || 5432,
-  database: process.env.DB_NAME || 'mct_db',
-  user: process.env.DB_USER || 'postgres',
-  password: process.env.DB_PASSWORD || 'postgres',
-  max: 20,
-  idleTimeoutMillis: 30000,
-  connectionTimeoutMillis: 2000,
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
 
-pool.on('connect', () => {
-  console.log('✅ Connected to PostgreSQL database');
+pool.on("connect", () => {
+  console.log("✅ Connected to Neon PostgreSQL");
 });
 
-pool.on('error', (err) => {
-  console.error('❌ Unexpected error on idle client', err.message);
+pool.on("error", (err) => {
+  console.error("❌ Database Error:", err.message);
 });
 
 const query = async (text, params = []) => {
-  const normalizedParams = params.map((param) => (param === undefined ? null : param));
-  const start = Date.now();
+  const normalizedParams = params.map((p) =>
+    p === undefined ? null : p
+  );
+
   try {
-    const res = await pool.query(text, normalizedParams);
-    const duration = Date.now() - start;
-    if (process.env.NODE_ENV === 'development') {
-      console.log('Query executed:', { text: text.substring(0, 80), duration: `${duration}ms`, rows: res.rowCount });
-    }
-    return res;
-  } catch (error) {
-    console.error('Database query error:', error.message, 'Query:', text, 'Params:', normalizedParams);
-    throw error;
+    return await pool.query(text, normalizedParams);
+  } catch (err) {
+    console.error("Database query error:", err.message);
+    throw err;
   }
 };
 
-module.exports = { pool, query };
+module.exports = {
+  pool,
+  query,
+};
