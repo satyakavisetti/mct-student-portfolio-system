@@ -17,16 +17,8 @@ pool.on("error", (err) => {
 });
 
 const query = async (text, params = []) => {
-  const normalizedParams = params.map((p) =>
-    p === undefined ? null : p
-  );
-
-  try {
-    return await pool.query(text, normalizedParams);
-  } catch (err) {
-    console.error("Database query error:", err.message);
-    throw err;
-  }
+  const normalizedParams = params.map((p) => p ?? null);
+  return pool.query(text, normalizedParams);
 };
 
 module.exports = {
