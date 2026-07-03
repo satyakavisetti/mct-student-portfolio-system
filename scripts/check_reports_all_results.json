@@ -1,0 +1,58 @@
+{
+  "results": [
+    {
+      "mssid": "MSS9000001",
+      "status": 200,
+      "ok": true,
+      "durationMs": 764,
+      "studentId": 44
+    },
+    {
+      "mssid": "MSS9999999",
+      "status": 200,
+      "ok": true,
+      "durationMs": 475,
+      "studentId": 7
+    },
+    {
+      "mssid": "MSS2022097",
+      "status": 200,
+      "ok": true,
+      "durationMs": 307,
+      "studentId": 45
+    },
+    {
+      "mssid": "MSS2022096",
+      "status": 200,
+      "ok": true,
+      "durationMs": 219,
+      "studentId": 36
+    },
+    {
+      "mssid": "MSS2022172",
+      "status": 200,
+      "ok": true,
+      "durationMs": 223,
+      "studentId": 11
+    },
+    {
+      "mssid": "MSS2022171",
+      "status": 200,
+      "ok": true,
+      "durationMs": 112,
+      "studentId": 8
+    },
+    {
+      "mssid": "MSS2022123",
+      "status": 200,
+      "ok": true,
+      "durationMs": 97,
+      "studentId": 41
+    }
+  ],
+  "summary": {
+    "total": 7,
+    "passed": 7,
+    "failed": 0
+  }
+}

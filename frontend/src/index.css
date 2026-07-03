@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+    min-height: 100vh;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  button,
+  a {
+    @apply transition duration-200 ease-in-out;
+  }
+
+  button {
+    @apply rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-slate-50;
+  }
+
+  input,
+  textarea,
+  select {
+    @apply w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition duration-200 ease-in-out focus:border-transparent focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-slate-50;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th,
+  td {
+    @apply px-4 py-3 text-sm text-slate-700;
+  }
+
+  th {
+    @apply bg-slate-100 text-slate-700 font-semibold uppercase tracking-[0.08em];
+  }
+
+  tr:hover td {
+    @apply bg-slate-50;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-[20px] border border-slate-200/80 shadow-soft p-6 transition-all duration-200 ease-in-out;
+  }
+
+  .card-soft {
+    @apply bg-slate-50 rounded-[20px] border border-slate-200/80 p-6;
+  }
+
+  .card-hover:hover {
+    @apply -translate-y-1 shadow-md;
+  }
+
+  .btn-primary {
+    @apply bg-primary-600 text-white px-5 py-3 rounded-2xl font-semibold shadow-sm hover:bg-primary-700 hover:shadow-md transform-gpu hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-slate-800 border border-slate-200 px-5 py-3 rounded-2xl font-semibold shadow-sm hover:bg-slate-50 hover:shadow-md transform-gpu hover:-translate-y-0.5;
+  }
+
+  .btn-outline {
+    @apply bg-transparent text-slate-800 border border-slate-300 px-5 py-3 rounded-2xl font-semibold hover:bg-slate-50 hover:text-slate-900;
+  }
+
+  .btn-danger {
+    @apply bg-danger-500 text-white px-5 py-3 rounded-2xl font-semibold shadow-sm hover:bg-danger-600 hover:shadow-md transform-gpu hover:-translate-y-0.5;
+  }
+
+  .section-title {
+    @apply text-xl font-semibold text-slate-900 mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-sm text-slate-500;
+  }
+
+  .page-title {
+    @apply text-3xl font-semibold text-slate-900;
+  }
+
+  .sidebar-link {
+    @apply flex items-center gap-3 px-4 py-3 rounded-[18px] text-sm font-semibold transition duration-200 ease-in-out text-slate-600 hover:bg-slate-100 hover:text-slate-900;
+  }
+
+  .sidebar-link-active {
+    @apply bg-primary-600 text-white shadow-lg;
+  }
+
+  .badge-pill {
+    @apply inline-flex rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700;
+  }
+
+  .dashboard-hero {
+    @apply rounded-[32px] border border-slate-200 bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 p-8 text-white shadow-2xl shadow-slate-900/20;
+  }
+
+  .metric-card {
+    @apply rounded-[28px] border border-slate-200 bg-white p-6 shadow-sm;
+  }
+
+  .metric-card-strong {
+    @apply rounded-[28px] bg-slate-950 p-6 text-white shadow-2xl shadow-slate-900/20;
+  }
+
+  .panel-grid {
+    @apply grid gap-6;
+  }
+
+  .panel-title {
+    @apply text-xl font-semibold text-slate-900;
+  }
+
+  .panel-subtitle {
+    @apply text-sm text-slate-500;
+  }
+
+  .overview-pill {
+    @apply inline-flex items-center gap-2 rounded-full bg-slate-900/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-slate-200;
+  }
+}

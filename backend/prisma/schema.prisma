@@ -1,0 +1,328 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Student {
+  id                Int                 @id @default(autoincrement()) @map("id")
+  mssid             String              @unique @map("mssid")
+  password          String              @map("password")
+  role              String?             @default("student") @map("role")
+  isActive          Boolean?            @map("is_active")
+  blockId           Int?                @map("block_id")
+  mentorId          Int?                @map("mentor_id")
+  createdAt         DateTime?           @map("created_at")
+  updatedAt         DateTime?           @map("updated_at")
+
+  platformHandles   PlatformHandle[]
+  platformProfiles  PlatformProfile[]
+  leetcodeStats     LeetCodeStat[]
+  leetcodeTopics    LeetCodeTopic[]
+  leetcodeQuestions LeetCodeQuestion[]
+  leetcodeContests  LeetCodeContest[]
+  codechefStats     CodeChefStat[]
+  codechefContests  CodeChefContest[]
+  hackerrankStats   HackerRankStat[]
+  hackerrankSkills  HackerRankSkill[]
+  hackerrankCertificates HackerRankCertificate[]
+  githubStats       GitHubStat[]
+  githubRepositories GitHubRepository[]
+  codingScores      CodingScore[]
+
+  @@map("students")
+}
+
+model PlatformHandle {
+  id          BigInt          @id @default(autoincrement()) @map("id")
+  studentId   Int              @map("student_id")
+  student     Student          @relation(fields: [studentId], references: [id])
+  platform    String
+  handle      String
+  profileUrl  String?          @map("profile_url")
+  isPrimary   Boolean          @default(false) @map("is_primary")
+  metadata    Json             @default("{}")
+  createdAt   DateTime         @default(now()) @map("created_at")
+  updatedAt   DateTime         @default(now()) @map("updated_at")
+  platformProfiles PlatformProfile[]
+
+  @@unique([studentId, platform], name: "uq_handles_student_platform")
+  @@unique([platform, handle], name: "uq_handle_platform")
+  @@map("coding_handles")
+}
+
+model PlatformProfile {
+  id             BigInt          @id @default(autoincrement()) @map("id")
+  studentId      Int              @map("student_id")
+  student        Student          @relation(fields: [studentId], references: [id])
+  codingHandleId BigInt?          @map("coding_handle_id")
+  codingHandle   PlatformHandle?  @relation(fields: [codingHandleId], references: [id])
+  platform       String
+  username       String?
+  profileUrl     String?          @map("profile_url")
+  rawData        Json             @default("{}")
+  stats          Json             @default("{}")
+  tags           String[]?        @db.Text[]
+  lastFetchedAt  DateTime?        @map("last_fetched_at")
+  createdAt      DateTime         @default(now()) @map("created_at")
+  updatedAt      DateTime         @default(now()) @map("updated_at")
+
+  @@unique([studentId, platform, username], name: "uq_platform_profile")
+  @@map("platform_profiles")
+}
+
+model LeetCodeStat {
+  id                  BigInt          @id @default(autoincrement()) @map("id")
+  studentId           Int              @map("student_id")
+  student             Student          @relation(fields: [studentId], references: [id])
+  totalSolved         Int?             @map("total_solved")
+  easySolved          Int?             @map("easy_solved")
+  mediumSolved        Int?             @map("medium_solved")
+  hardSolved          Int?             @map("hard_solved")
+  activeDays          Int?             @map("active_days")
+  maxStreak           Int?             @map("max_streak")
+  reputation          Int?
+  globalRank          Int?             @map("global_rank")
+  countryRank         Int?             @map("country_rank")
+  contestCount        Int?             @map("contest_count")
+  problemsSolved      Int?             @map("problems_solved")
+  codingScore         Int?             @map("coding_score")
+  badges              Json?
+  languages           String[]?        @db.Text[]
+  metadata            Json             @default("{}")
+  lastFetchedAt       DateTime?        @map("last_fetched_at")
+  createdAt           DateTime         @default(now()) @map("created_at")
+  updatedAt           DateTime         @default(now()) @map("updated_at")
+
+  topics              LeetCodeTopic[]
+  questions           LeetCodeQuestion[]
+  @@map("leetcode_stats")
+}
+
+model LeetCodeTopic {
+  id                    BigInt          @id @default(autoincrement()) @map("id")
+  studentId             Int              @map("student_id")
+  student               Student          @relation(fields: [studentId], references: [id])
+  leetcodeStatId        BigInt?          @map("leetcode_stat_id")
+  leetcodeStat          LeetCodeStat?    @relation(fields: [leetcodeStatId], references: [id])
+  name                  String
+  slug                  String?
+  questionsCount        Int?             @map("questions_count")
+  solvedCount           Int?             @map("solved_count")
+  difficultyDistribution Json?
+  createdAt             DateTime         @default(now()) @map("created_at")
+  updatedAt             DateTime         @default(now()) @map("updated_at")
+
+  @@unique([studentId, name], name: "uq_leetcode_topic_student_name")
+  @@map("leetcode_topics")
+}
+
+model LeetCodeQuestion {
+  id             BigInt          @id @default(autoincrement()) @map("id")
+  studentId      Int              @map("student_id")
+  student        Student          @relation(fields: [studentId], references: [id])
+  leetcodeStatId BigInt?          @map("leetcode_stat_id")
+  leetcodeStat   LeetCodeStat?    @relation(fields: [leetcodeStatId], references: [id])
+  questionId     String?          @map("question_id")
+  questionSlug   String?          @map("question_slug")
+  title          String?
+  questionUrl    String?          @map("question_url")
+  difficulty     String?
+  status         String?
+  solvedAt       DateTime?        @map("solved_at")
+  topics         String[]?        @db.Text[]
+  tags           String[]?        @db.Text[]
+  runtime        String?
+  memory         String?
+  metadata       Json             @default("{}")
+  createdAt      DateTime         @default(now()) @map("created_at")
+  updatedAt      DateTime         @default(now()) @map("updated_at")
+
+  @@unique([studentId, questionId], name: "uq_leetcode_question_student_question")
+  @@map("leetcode_questions")
+}
+
+model LeetCodeContest {
+  id            BigInt          @id @default(autoincrement()) @map("id")
+  studentId     Int              @map("student_id")
+  student       Student          @relation(fields: [studentId], references: [id])
+  contestId     String           @map("contest_id")
+  contestName   String?          @map("contest_name")
+  contestUrl    String?          @map("contest_url")
+  contestDate   DateTime?        @map("contest_date")
+  rank          Int?
+  ratingBefore  Int?             @map("rating_before")
+  ratingAfter   Int?             @map("rating_after")
+  ratingChange  Int?             @map("rating_change")
+  details       Json             @default("{}")
+  createdAt     DateTime         @default(now()) @map("created_at")
+  updatedAt     DateTime         @default(now()) @map("updated_at")
+
+  @@unique([studentId, contestId], name: "uq_leetcode_contest_student_contest")
+  @@map("leetcode_contests")
+}
+
+model CodeChefStat {
+  id                BigInt          @id @default(autoincrement()) @map("id")
+  studentId         Int              @map("student_id")
+  student           Student          @relation(fields: [studentId], references: [id])
+  rating            Int?
+  maxRating         Int?             @map("max_rating")
+  problemsSolved    Int?             @map("problems_solved")
+  contestCount      Int?             @map("contest_count")
+  globalRank        Int?             @map("global_rank")
+  countryRank       Int?             @map("country_rank")
+  starsBadges       String?
+  reputation        Int?
+  metadata          Json             @default("{}")
+  lastFetchedAt     DateTime?        @map("last_fetched_at")
+  createdAt         DateTime         @default(now()) @map("created_at")
+  updatedAt         DateTime         @default(now()) @map("updated_at")
+
+  @@map("codechef_stats")
+}
+
+model CodeChefContest {
+  id            BigInt          @id @default(autoincrement()) @map("id")
+  studentId     Int              @map("student_id")
+  student       Student          @relation(fields: [studentId], references: [id])
+  contestId     String           @map("contest_id")
+  contestName   String?          @map("contest_name")
+  contestUrl    String?          @map("contest_url")
+  contestDate   DateTime?        @map("contest_date")
+  rank          Int?
+  ratingBefore  Int?             @map("rating_before")
+  ratingAfter   Int?             @map("rating_after")
+  ratingChange  Int?             @map("rating_change")
+  details       Json             @default("{}")
+  createdAt     DateTime         @default(now()) @map("created_at")
+  updatedAt     DateTime         @default(now()) @map("updated_at")
+
+  @@unique([studentId, contestId], name: "uq_codechef_contest_student_contest")
+  @@map("codechef_contests")
+}
+
+model HackerRankStat {
+  id                BigInt          @id @default(autoincrement()) @map("id")
+  studentId         Int              @map("student_id")
+  student           Student          @relation(fields: [studentId], references: [id])
+  totalPoints       Int?             @map("total_points")
+  badgesCount       Int?             @map("badges_count")
+  reputation        Int?
+  globalRank        Int?             @map("global_rank")
+  problemsSolved    Int?             @map("problems_solved")
+  skillsCount       Int?             @map("skills_count")
+  certificatesCount Int?             @map("certificates_count")
+  profileUrl        String?          @map("profile_url")
+  metadata          Json             @default("{}")
+  lastFetchedAt     DateTime?        @map("last_fetched_at")
+  createdAt         DateTime         @default(now()) @map("created_at")
+  updatedAt         DateTime         @default(now()) @map("updated_at")
+
+  @@map("hackerrank_stats")
+}
+
+model HackerRankSkill {
+  id            BigInt          @id @default(autoincrement()) @map("id")
+  studentId     Int              @map("student_id")
+  student       Student          @relation(fields: [studentId], references: [id])
+  skillName     String           @map("skill_name")
+  rank          Int?
+  score         Int?
+  level         String?
+  badgesCount   Int?             @map("badges_count")
+  lastUpdatedAt DateTime?        @map("last_updated_at")
+  metadata      Json             @default("{}")
+  createdAt     DateTime         @default(now()) @map("created_at")
+  updatedAt     DateTime         @default(now()) @map("updated_at")
+
+  @@unique([studentId, skillName], name: "uq_hackerrank_skill_student_name")
+  @@map("hackerrank_skills")
+}
+
+model HackerRankCertificate {
+  id             BigInt          @id @default(autoincrement()) @map("id")
+  studentId      Int              @map("student_id")
+  student        Student          @relation(fields: [studentId], references: [id])
+  certificateId  String?          @map("certificate_id")
+  title          String           @map("title")
+  issuedBy       String?          @map("issued_by")
+  issueDate      DateTime?        @map("issue_date")
+  expiryDate     DateTime?        @map("expiry_date")
+  score          Int?
+  certificateUrl String?          @map("certificate_url")
+  metadata       Json             @default("{}")
+  createdAt      DateTime         @default(now()) @map("created_at")
+  updatedAt      DateTime         @default(now()) @map("updated_at")
+
+  @@unique([studentId, certificateId], name: "uq_hackerrank_certificate_student_certificate")
+  @@map("hackerrank_certificates")
+}
+
+model GitHubStat {
+  id               BigInt          @id @default(autoincrement()) @map("id")
+  studentId        Int              @map("student_id")
+  student          Student          @relation(fields: [studentId], references: [id])
+  username         String
+  profileUrl       String?          @map("profile_url")
+  totalRepos       Int?             @map("total_repos")
+  totalStars       Int?             @map("total_stars")
+  totalForks       Int?             @map("total_forks")
+  totalWatchers    Int?             @map("total_watchers")
+  followers        Int?
+  following        Int?
+  contributions    Int?             @map("contributions_last_year")
+  topLanguages     Json?
+  metadata         Json             @default("{}")
+  lastFetchedAt    DateTime?        @map("last_fetched_at")
+  createdAt        DateTime         @default(now()) @map("created_at")
+  updatedAt        DateTime         @default(now()) @map("updated_at")
+
+  @@map("github_stats")
+}
+
+model GitHubRepository {
+  id            BigInt          @id @default(autoincrement()) @map("id")
+  studentId     Int              @map("student_id")
+  student       Student          @relation(fields: [studentId], references: [id])
+  repoId        String?          @map("repo_id")
+  name          String
+  fullName      String?          @map("full_name")
+  repoUrl       String           @map("repo_url")
+  description   String?
+  language      String?
+  stars         Int?             @map("stargazers_count")
+  forks         Int?             @map("forks_count")
+  watchers      Int?             @map("watchers_count")
+  openIssues    Int?             @map("open_issues_count")
+  topics        String[]?        @db.Text[]
+  license       String?
+  isFork        Boolean?         @map("is_fork")
+  isPrivate     Boolean?         @map("is_private")
+  pushedAt      DateTime?        @map("pushed_at")
+  metadata      Json             @default("{}")
+  createdAt     DateTime         @default(now()) @map("created_at")
+  updatedAt     DateTime         @default(now()) @map("updated_at")
+
+  @@unique([studentId, repoId], name: "uq_github_repository_student_repo")
+  @@map("github_repositories")
+}
+
+model CodingScore {
+  id          BigInt          @id @default(autoincrement()) @map("id")
+  studentId   Int              @map("student_id")
+  student     Student          @relation(fields: [studentId], references: [id])
+  platform    String?
+  category    String?
+  score       Int
+  source      String?
+  computedAt  DateTime?        @map("computed_at")
+  details     Json             @default("{}")
+  createdAt   DateTime         @default(now()) @map("created_at")
+  updatedAt   DateTime         @default(now()) @map("updated_at")
+
+  @@map("coding_scores")
+}

@@ -1,0 +1,257 @@
+{
+  "platform": "leetcode",
+  "username": "SatyaKavisetti",
+  "profileStatus": "active",
+  "lastFetched": "2026-07-01T03:05:30.622Z",
+  "rating": 1299.7658959134185,
+  "rank": 849846,
+  "problemsSolved": 258,
+  "currentStreak": 48,
+  "totalActiveDays": 111,
+  "maxStreak": 48,
+  "topicStatistics": {
+    "Dynamic Programming": 38,
+    "Backtracking": 14,
+    "Divide and Conquer": 13,
+    "Segment Tree": 7,
+    "Trie": 6,
+    "Union-Find": 4,
+    "Shortest Path": 3,
+    "Binary Indexed Tree": 2,
+    "Math": 54,
+    "Hash Table": 42,
+    "Bit Manipulation": 31,
+    "Binary Search": 26,
+    "Depth-First Search": 17,
+    "Tree": 16,
+    "Greedy": 16,
+    "Binary Tree": 14,
+    "Array": 144,
+    "String": 60,
+    "Sorting": 33,
+    "Matrix": 28,
+    "Two Pointers": 26,
+    "Simulation": 23,
+    "Linked List": 9,
+    "Enumeration": 8
+  },
+  "badges": [
+    {
+      "name": "Annual Badge",
+      "icon": "https://assets.leetcode.com/static_assets/others/100_1080_1080.png",
+      "expired": false
+    },
+    {
+      "name": "Annual Badge",
+      "icon": "https://assets.leetcode.com/static_assets/others/50_1080_1080.png",
+      "expired": false
+    }
+  ],
+  "contests": [
+    {
+      "contestName": "Weekly Contest 484",
+      "contestDate": "2026-01-11T02:30:00.000Z",
+      "rank": 21568,
+      "ratingBefore": null,
+      "ratingAfter": 1437.432,
+      "ratingChange": null,
+      "problemsSolved": 1
+    },
+    {
+      "contestName": "Weekly Contest 485",
+      "contestDate": "2026-01-18T02:30:00.000Z",
+      "rank": 16418,
+      "ratingBefore": null,
+      "ratingAfter": 1428.28,
+      "ratingChange": null,
+      "problemsSolved": 1
+    },
+    {
+      "contestName": "Weekly Contest 486",
+      "contestDate": "2026-01-25T02:30:00.000Z",
+      "rank": 20720,
+      "ratingBefore": null,
+      "ratingAfter": 1402.99,
+      "ratingChange": null,
+      "problemsSolved": 1
+    },
+    {
+      "contestName": "Biweekly Contest 175",
+      "contestDate": "2026-01-31T14:30:00.000Z",
+      "rank": 27035,
+      "ratingBefore": null,
+      "ratingAfter": 1374.336,
+      "ratingChange": null,
+      "problemsSolved": 1
+    },
+    {
+      "contestName": "Weekly Contest 487",
+      "contestDate": "2026-02-01T02:30:00.000Z",
+      "rank": 26467,
+      "ratingBefore": null,
+      "ratingAfter": 1348.65,
+      "ratingChange": null,
+      "problemsSolved": 1
+    },
+    {
+      "contestName": "Weekly Contest 488",
+      "contestDate": "2026-02-08T02:30:00.000Z",
+      "rank": 28216,
+      "ratingBefore": null,
+      "ratingAfter": 1327.292,
+      "ratingChange": null,
+      "problemsSolved": 1
+    },
+    {
+      "contestName": "Biweekly Contest 176",
+      "contestDate": "2026-02-14T14:30:00.000Z",
+      "rank": 27736,
+      "ratingBefore": null,
+      "ratingAfter": 1305.456,
+      "ratingChange": null,
+      "problemsSolved": 1
+    },
+    {
+      "contestName": "Weekly Contest 499",
+      "contestDate": "2026-04-26T02:30:00.000Z",
+      "rank": 15582,
+      "ratingBefore": null,
+      "ratingAfter": 1311.321,
+      "ratingChange": null,
+      "problemsSolved": 1
+    },
+    {
+      "contestName": "Weekly Contest 501",
+      "contestDate": "2026-05-10T02:30:00.000Z",
+      "rank": 16101,
+      "ratingBefore": null,
+      "ratingAfter": 1299.766,
+      "ratingChange": null,
+      "problemsSolved": 1
+    }
+  ],
+  "recentProblems": [
+    {
+      "title": "Number of ZigZag Arrays I",
+      "difficulty": null,
+      "url": "https://leetcode.com/problems/number-of-zigzag-arrays-i/",
+      "solvedDate": "2026-06-23T20:32:26.000Z"
+    },
+    {
+      "title": "Maximum Building Height",
+      "difficulty": null,
+      "url": "https://leetcode.com/problems/maximum-building-height/",
+      "solvedDate": "2026-06-20T19:04:38.000Z"
+    },
+    {
+      "title": "Process String with Special Operations II",
+      "difficulty": null,
+      "url": "https://leetcode.com/problems/process-string-with-special-operations-ii/",
+      "solvedDate": "2026-06-17T18:17:13.000Z"
+    },
+    {
+      "title": "Number of Ways to Assign Edge Weights II",
+      "difficulty": null,
+      "url": "https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-ii/",
+      "solvedDate": "2026-06-16T19:37:38.000Z"
+    },
+    {
+      "title": "Process String with Special Operations I",
+      "difficulty": null,
+      "url": "https://leetcode.com/problems/process-string-with-special-operations-i/",
+      "solvedDate": "2026-06-16T19:36:05.000Z"
+    },
+    {
+      "title": "Delete the Middle Node of a Linked List",
+      "difficulty": null,
+      "url": "https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/",
+      "solvedDate": "2026-06-15T19:20:32.000Z"
+    },
+    {
+      "title": "Number of Ways to Assign Edge Weights I",
+      "difficulty": null,
+      "url": "https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/",
+      "solvedDate": "2026-06-11T20:15:54.000Z"
+    },
+    {
+      "title": "Minimum Number of Seconds to Make Mountain Height Zero",
+      "difficulty": null,
+      "url": "https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/",
+      "solvedDate": "2026-06-10T18:33:24.000Z"
+    },
+    {
+      "title": "Complement of Base 10 Integer",
+      "difficulty": null,
+      "url": "https://leetcode.com/problems/complement-of-base-10-integer/",
+      "solvedDate": "2026-06-10T18:32:45.000Z"
+    },
+    {
+      "title": "Maximum Total Subarray Value II",
+      "difficulty": null,
+      "url": "https://leetcode.com/problems/maximum-total-subarray-value-ii/",
+      "solvedDate": "2026-06-10T18:31:49.000Z"
+    },
+    {
+      "title": "Flip Square Submatrix Vertically",
+      "difficulty": null,
+      "url": "https://leetcode.com/problems/flip-square-submatrix-vertically/",
+      "solvedDate": "2026-06-09T18:26:00.000Z"
+    },
+    {
+      "title": "Maximum Total Subarray Value I",
+      "difficulty": null,
+      "url": "https://leetcode.com/problems/maximum-total-subarray-value-i/",
+      "solvedDate": "2026-06-09T18:25:14.000Z"
+    },
+    {
+      "title": "Valid Sudoku",
+      "difficulty": null,
+      "url": "https://leetcode.com/problems/valid-sudoku/",
+      "solvedDate": "2026-06-08T19:27:48.000Z"
+    },
+    {
+      "title": "Recover Binary Search Tree",
+      "difficulty": null,
+      "url": "https://leetcode.com/problems/recover-binary-search-tree/",
+      "solvedDate": "2026-06-08T19:27:10.000Z"
+    },
+    {
+      "title": "Partition Array According to Given Pivot",
+      "difficulty": null,
+      "url": "https://leetcode.com/problems/partition-array-according-to-given-pivot/",
+      "solvedDate": "2026-06-08T19:25:52.000Z"
+    },
+    {
+      "title": "Left and Right Sum Differences",
+      "difficulty": null,
+      "url": "https://leetcode.com/problems/left-and-right-sum-differences/",
+      "solvedDate": "2026-06-07T18:44:07.000Z"
+    },
+    {
+      "title": "Minimum Cost of Buying Candies With Discount",
+      "difficulty": null,
+      "url": "https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/",
+      "solvedDate": "2026-06-07T18:43:35.000Z"
+    },
+    {
+      "title": "Create Binary Tree From Descriptions",
+      "difficulty": null,
+      "url": "https://leetcode.com/problems/create-binary-tree-from-descriptions/",
+      "solvedDate": "2026-06-07T18:42:54.000Z"
+    },
+    {
+      "title": "Total Waviness of Numbers in Range II",
+      "difficulty": null,
+      "url": "https://leetcode.com/problems/total-waviness-of-numbers-in-range-ii/",
+      "solvedDate": "2026-06-05T14:55:45.000Z"
+    },
+    {
+      "title": "Restore IP Addresses",
+      "difficulty": null,
+      "url": "https://leetcode.com/problems/restore-ip-addresses/",
+      "solvedDate": "2026-06-04T04:18:23.000Z"
+    }
+  ],
+  "success": true,
+  "error": null
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "key": [
+      "userPublicProfile",
+      {
+        "username": "SatyaKavisetti"
+      }
+    ],
+    "dataKeys": [
+      "matchedUser",
+      "ugcArticleUserSolutionArticles",
+      "ugcArticleUserDiscussionArticles"
+    ]
+  }
+]

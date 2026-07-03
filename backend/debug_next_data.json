@@ -1,0 +1,1544 @@
+{
+  "props": {
+    "pageProps": {
+      "_sentryTraceData": "eb9df5d60fcf6679e26bd80c18b6e3ea-a3b26da8d0629ddd-0",
+      "_sentryBaggage": "sentry-environment=production,sentry-release=726cdfa4,sentry-public_key=2a051f9838e2450fbdd5a77eb62cc83c,sentry-trace_id=eb9df5d60fcf6679e26bd80c18b6e3ea,sentry-org_id=6871,sentry-sampled=false,sentry-sample_rand=0.14908860482669573,sentry-sample_rate=0",
+      "dehydratedState": {
+        "mutations": [],
+        "queries": [
+          {
+            "state": {
+              "data": {
+                "matchedUser": {
+                  "isBlocked": false,
+                  "isBlocker": false,
+                  "contestBadge": null,
+                  "username": "SatyaKavisetti",
+                  "githubUrl": null,
+                  "twitterUrl": null,
+                  "linkedinUrl": null,
+                  "profile": {
+                    "ranking": 582896,
+                    "userAvatar": "https://assets.leetcode.com/users/BEouPYVQCB/avatar_1766927324.png",
+                    "realName": "Satya_11",
+                    "aboutMe": "",
+                    "school": null,
+                    "websites": [],
+                    "countryName": "India",
+                    "company": null,
+                    "jobTitle": null,
+                    "skillTags": [
+                      "c",
+                      "java",
+                      "python"
+                    ],
+                    "postViewCount": 5,
+                    "postViewCountDiff": 0,
+                    "reputation": 0,
+                    "reputationDiff": 0,
+                    "solutionCountDiff": 0,
+                    "categoryDiscussCountDiff": 0,
+                    "certificationLevel": "NORMAL",
+                    "isFollowingMe": false,
+                    "isFollowedByMe": false,
+                    "hideFollowers": false,
+                    "hideFollowing": false
+                  }
+                },
+                "ugcArticleUserSolutionArticles": {
+                  "totalNum": 2
+                },
+                "ugcArticleUserDiscussionArticles": {
+                  "totalNum": 0
+                }
+              },
+              "dataUpdateCount": 1,
+              "dataUpdatedAt": 1782874774650,
+              "error": null,
+              "errorUpdateCount": 0,
+              "errorUpdatedAt": 0,
+              "fetchFailureCount": 0,
+              "fetchFailureReason": null,
+              "fetchMeta": null,
+              "isInvalidated": false,
+              "status": "success",
+              "fetchStatus": "idle"
+            },
+            "queryKey": [
+              "userPublicProfile",
+              {
+                "username": "SatyaKavisetti"
+              }
+            ],
+            "queryHash": "[\"userPublicProfile\",{\"username\":\"SatyaKavisetti\"}]"
+          }
+        ]
+      },
+      "_nextI18Next": {
+        "initialI18nStore": {
+          "en": {
+            "common": {
+              "404": {
+                "title": "Page Not Found - LeetCode",
+                "pageNotFound": "Page Not Found",
+                "message": "Sorry, but we can't find the page you are looking for..."
+              },
+              "meta": {
+                "title": "",
+                "description": "",
+                "keywords": ""
+              },
+              "home": {
+                "title": "LeetCode - The World's Leading Programming Learning Platform",
+                "description": "A New Way to Learn. LeetCode is the best platform to help you enhance your skills, expand your knowledge and prepare for technical interviews."
+              },
+              "loading": "loading...",
+              "ok": "OK",
+              "cancel": "Cancel",
+              "confirm": "Confirm",
+              "update": "Update",
+              "submit": "Submit",
+              "more": "More",
+              "save": "Save",
+              "netFailed": "Debugger failed to connect",
+              "close": "Close",
+              "header": {
+                "logo": {
+                  "url": "",
+                  "description": ""
+                },
+                "title": {
+                  "problemset-all": ""
+                },
+                "action": {
+                  "login": {
+                    "text": "",
+                    "url": ""
+                  }
+                }
+              },
+              "conjunctions": {
+                "and": "and",
+                "or": "or"
+              },
+              "pages": {
+                "leetcode": "LeetCode",
+                "explore": "Explore",
+                "problems": "Problems",
+                "interview": {
+                  "interview": "Interview",
+                  "onlineInterview": "Online Interview",
+                  "assessment": "Assessment"
+                },
+                "contest": "Contest",
+                "discuss": "Discuss",
+                "store": {
+                  "store": "Store",
+                  "redeem": "Redeem",
+                  "premium": "Premium",
+                  "shop": "Micro-shop"
+                },
+                "admin": {
+                  "admin": "Admin",
+                  "library": "Library",
+                  "review": "Review",
+                  "operations": "User Management",
+                  "scores": "Points",
+                  "contribute": "Contribution",
+                  "backend": "Administration",
+                  "internalContest": "Internal Contest Dashboard",
+                  "contestDashboard": "Contest Dashboard",
+                  "contestAdmin": "Contest Cheating Dashboard",
+                  "emailBatch": "Email Batch",
+                  "dangerZone": "Danger Zone",
+                  "dbTestcase": "DB Testcase Converter",
+                  "tagManagement": "Tag Management",
+                  "questionFeedback": "Question Feedback"
+                },
+                "mobileApp": "Mobile App",
+                "playground": "Playground",
+                "signIn": "Log in",
+                "register": "Register",
+                "signOut": "Sign Out"
+              },
+              "userMenu": {
+                "renew": "Renew",
+                "getPremium": "Access all features with our Premium subscription!",
+                "orders": "Orders",
+                "tryNewFeatures": "Try New Features",
+                "translateQuestions": "Display problems in Chinese",
+                "unmockUser": "Unmock User",
+                "revertToOldVersion": "Classic Mode",
+                "categories": {
+                  "myList": "My Lists",
+                  "notebook": "Notebook",
+                  "submissions": "Submissions",
+                  "session": "Session",
+                  "points": "Points",
+                  "progress": "Progress"
+                },
+                "appearance": "Appearance",
+                "appearanceContent": {
+                  "auto": "System Default",
+                  "light": "Light",
+                  "dark": "Dark"
+                },
+                "account": "Settings"
+              },
+              "streakCounter": {
+                "finished": "Well done! Come back for tomorrow's challenge!",
+                "unfinished": "Solve today's Daily Challenge to refresh your streak!",
+                "buyTimeTravelTicket": "Buy Time Travel Ticket",
+                "missedOneDayThisMonth": "You missed 1 day this month. ",
+                "missedDaysThisMonth": "You missed {{count}} days this month. "
+              },
+              "playground": {
+                "playground": "Playground",
+                "myPlaygrounds": "My Playgrounds",
+                "remainingPlaygrounds": "Remaining",
+                "renew": "Renew",
+                "templates": {
+                  "consoleApplication": "Console Application",
+                  "empty": "New Playground",
+                  "frontend": "Frontend",
+                  "machineLearning": "Machine Learning"
+                }
+              },
+              "links": {
+                "premium": "/subscribe/",
+                "discuss": "/discuss/",
+                "assessment": "/assessment/",
+                "shop": "https://detail.youzan.com/show/goods/newest?alias=271n43vr9hen7",
+                "onlineInterview": "https://interview.leetcode.com/interview/",
+                "profileArticles": "/submissions/",
+                "orders": "/settings/orders/",
+                "tryNewFeatures": "/new/",
+                "explore": "/explore/",
+                "admin": {
+                  "scores": "/points/admin",
+                  "operations": "/user_management"
+                },
+                "playground": "/playground",
+                "account": "/settings"
+              },
+              "pagination": {
+                "perpage": "/ page"
+              },
+              "expand": "Expand",
+              "collapse": "Collapse",
+              "difficulty": {
+                "easy": "Easy",
+                "medium": "Medium",
+                "hard": "Hard"
+              },
+              "easterEgg": {
+                "rewardMessage": "Congratulations! You just found 10 LeetCoins. Happy LeetCoding!"
+              },
+              "markdown": {
+                "heading": "heading",
+                "quote": "Quote"
+              },
+              "mentions": {
+                "users": "Users",
+                "problems": "Problems"
+              },
+              "confirmModal": {
+                "title": "Are you sure?",
+                "confirmBtn": "Confirm",
+                "cancelBtn": "Cancel"
+              },
+              "saving": "Saving...",
+              "saved": "Saved",
+              "autoSaved": "Save automatically",
+              "loginRequired": "Log in required",
+              "verifiedRequired": "You need to verify your email",
+              "phoneVerifiedRequired": "Your need to verify your phone",
+              "maybeVerifiedRequired": "You need to verify your email",
+              "dailyCheckIn": "+1 Daily Check-in",
+              "copy": "Copy",
+              "copyToEditor": "Copy To Editor",
+              "copied": "Copied!",
+              "copyLink": "Copy Link",
+              "viewMore": "View more",
+              "zoomIn": "Zoom in",
+              "zoomOut": "Zoom out",
+              "zoomReset": "Reset to fit",
+              "viewDetails": "View details",
+              "viewLess": "View less",
+              "code": "Code",
+              "diagram": "Diagram",
+              "loadingDiagram": "Loading diagram...",
+              "diagramError": "Diagram error",
+              "openDiagram": "Open",
+              "survey": {
+                "veryDissatisfied": "Very Dissatisfied",
+                "verySatisfied": "Very Satisfied",
+                "next": "Next",
+                "continue": "Continue",
+                "submit": "Submit",
+                "questionNo": "Question {{current}} of {{total}}",
+                "thanksMsg": "🎉 Thanks for your feedback!"
+              },
+              "qdNav": {
+                "backTitle": "Problem List",
+                "expandPanel": "Expand Panel",
+                "expandNamePanel": "Expand {{listName}} problems",
+                "preQuestion": "Prev Question",
+                "nextQuestion": "Next Question",
+                "next": "Next",
+                "prev": "Prev",
+                "pickOne": "Pick one",
+                "openInNewTab": "Open in New Tab"
+              },
+              "premiumModal": {
+                "learnMore": "Learn more",
+                "subscribe": "Subscribe"
+              },
+              "truncatedContent": {
+                "viewAll": "View all",
+                "viewLess": "View less",
+                "openRaw": "Open Raw",
+                "showMore": "Show more",
+                "showLess": "Show less"
+              },
+              "chromeNotSupport": "The current version of browser is too low. For better experience, upgrade to the latest version",
+              "lcAppWebviewNotSupport": "The app-in browser version is too early. Please copy the link and use the default browser to open it",
+              "account": {
+                "emailVerifyModal": {
+                  "title": "Verify your account",
+                  "description": "Please verify your email address to continue.",
+                  "verify": "Verify",
+                  "cancel": "Cancel"
+                }
+              },
+              "medal": {
+                "metadataTitle": "Badge - LeetCode",
+                "congratulation": "Congratulations",
+                "genPoster": "Generate Image",
+                "genPostering": "Generating",
+                "saveImgMobile": "Long press to save the image",
+                "saveImgPc": "Right-click to save the image",
+                "medalEmpty": "Sorry, there are no medals to grab right now."
+              },
+              "recordEventType": {
+                "start": "Start",
+                "switchQuestion": "Switch Question",
+                "switchLang": "Switch Language",
+                "pageVisible": "Page Switch",
+                "interpretCode": "Run Code",
+                "submitCode": "Submit Code",
+                "end": "End",
+                "input": "Input",
+                "undo": "Undo",
+                "redo": "Redo",
+                "paste": "External Paste",
+                "changeCursor": "Change Cursor",
+                "debug": "Debug",
+                "debugEnd": "Debug End"
+              },
+              "codeReplay": {
+                "title": "Code Replay",
+                "redirectContent": "This account belongs to LeetCode China. Would you like to view it on leetcode.cn?",
+                "doNotShowAgain": "Don't show again",
+                "eventHistory": "Event History",
+                "skipInactive": "Skip Inactive",
+                "noCodeResults": "No code results",
+                "size": "Size",
+                "chars": "chars",
+                "leaveContestPageN": "Leave Contest Page",
+                "returnContestPage": "Return to Contest Page",
+                "speed": "Speed",
+                "showEventsIndicator": "Show Events Indicator",
+                "settings": "Settings",
+                "toggleEventList": "Toggle Event List"
+              },
+              "verified": "Verified",
+              "phonePlaceholder": "Please enter your phone number",
+              "searchPlaceholder": "Search...",
+              "signIn": "Sign In",
+              "block": "Block",
+              "unblock": "Unblock",
+              "blockDescription": "They won't be able to follow you, view your profile, or interact with your posts or comments. You won't see their posts or comments either."
+            },
+            "public-profile": {
+              "meta": {
+                "title": "{{username}} - LeetCode Profile",
+                "description": "View {{username}}'s profile on LeetCode, the world's largest programming community.",
+                "keywords": "",
+                "ogImage": "https://leetcode.com/static/images/LeetCode_Sharing.png"
+              },
+              "basic": {
+                "aboutMe": "About Me",
+                "followers": "Followers",
+                "following": "Following",
+                "follow": "Follow",
+                "followed": "Following",
+                "mutualFollow": "Mutual Follow",
+                "unfollow": "Unfollow",
+                "editProfile": "Edit Profile",
+                "followingListInvisible": "Following list is private",
+                "followerListInvisible": "Follower list is private"
+              },
+              "problemsSolved": {
+                "solved": "Solved",
+                "solvedProblems": "Solved Problems",
+                "notEnoughData": "Not enough data",
+                "beats": "Beats",
+                "difficulty": {
+                  "easy": "Easy",
+                  "medium": "Medium",
+                  "hard": "Hard"
+                }
+              },
+              "community": {
+                "lastWeek": "Last week",
+                "lastDay": "Last day",
+                "title": "Community Stats",
+                "views": "Views",
+                "vote": "Vote",
+                "level": "Level",
+                "reputation": "Reputation",
+                "favorite": "Favorite",
+                "solution": "Solution",
+                "discuss": "Discuss"
+              },
+              "submissionHeatMap": {
+                "submission": "submissions in the past one year",
+                "submissionInYear": "submissions in {{year}}",
+                "totalActiveDays": "Total active days",
+                "maxStreak": "Max streak",
+                "utcTimezone": "Submissions are recorded in the UTC timezone",
+                "timePeriod": {
+                  "current": "Current"
+                }
+              },
+              "languages": {
+                "title": "Languages",
+                "notEnoughData": "Not enough data",
+                "calculatingData": "Calculating...",
+                "problemsSolved_one": "problem solved",
+                "problemsSolved_other": "problems solved",
+                "showMore": "Show more",
+                "showLess": "Show less"
+              },
+              "skills": {
+                "title": "Skills",
+                "advanced": "Advanced",
+                "intermediate": "Intermediate",
+                "fundamental": "Fundamental",
+                "notEnoughData": "Not enough data",
+                "showMore": "Show more",
+                "showLess": "Show less"
+              },
+              "recentsList": {
+                "showMore": "Show More",
+                "allSubmissions": "View all submissions",
+                "viewAll": "View all",
+                "recentAc": "Recent AC",
+                "solutions": "Solutions",
+                "discuss": "Discuss",
+                "mostVotes": "Most Votes",
+                "mostRecent": "Most Recent",
+                "votes": "Votes",
+                "recent": "Recent",
+                "noSubmissions": "No recent submissions",
+                "noSolution": "No solutions",
+                "noDiscuss": "No discussions",
+                "problemList": "List",
+                "viewAllList": "View all",
+                "noListText": "No Public lists",
+                "seeViewAll": "View all lists"
+              },
+              "badges": {
+                "badges": "Badges",
+                "lockedBadge": "Locked Badge",
+                "mostRecentBadge": "Most Recent Badge",
+                "dailyChallenge": "Daily Challenge",
+                "historyAwards": "History Awards",
+                "showMoreBadges": "Show more badges",
+                "badgeList": "Badge List",
+                "competitionMedals": "Competition Medals",
+                "dailyMedals": "Daily Medals",
+                "studyPlanMedals": "Study Plan Medals",
+                "activityMedals": "Activity Medals",
+                "annualMedals": "Annual Medals",
+                "submissionMedals": "Submission Days",
+                "active": "Active",
+                "notActive": "Not Active"
+              },
+              "contestGraph": {
+                "contestBadge": {
+                  "self": "Reach top {{percentage}}% of the contest rating to regain the badge",
+                  "anonymous": "Previous Achievement"
+                },
+                "level": "Level",
+                "historyLevel": "History Level",
+                "contest": "Contest",
+                "rank": "Rank",
+                "solved": "Solved",
+                "score": "Score",
+                "contestRating": "Contest Rating",
+                "globalRanking": "Global Ranking",
+                "localRanking": "Local Ranking",
+                "attended": "Attended",
+                "unlockGlobalRanking": "{{count}} more contests to unlock Global Ranking."
+              },
+              "histogram": {
+                "top": "Top",
+                "numberOfUsers": "{{numberOfUsers}} users"
+              },
+              "feedback": {
+                "feedback": "Feedback",
+                "revertToOld": "Revert to old version"
+              },
+              "socialProfile": {
+                "uploadAvatar": "Upload Profile Avatar",
+                "cancel": "Cancel",
+                "save": "Save"
+              },
+              "blockerUserFollowTip": "You've been blocked and can't follow this user.",
+              "blockedPlaceHolder": "You have blocked {{username}}.",
+              "blockerPlaceHolder": "You've been blocked and this profile is unavailable. "
+            },
+            "edit-profile": {
+              "meta": {
+                "profile": {
+                  "title": "Profile - LeetCode"
+                },
+                "resume": {
+                  "title": "Resume - LeetCode"
+                },
+                "preview-resume": {
+                  "title": "Preview - LeetCode"
+                },
+                "account": {
+                  "title": "Account - LeetCode"
+                },
+                "notifications": {
+                  "title": "Notifications - LeetCode"
+                }
+              },
+              "buttons": {
+                "submit": "Submit",
+                "submitting": "Submitting",
+                "save": "Save",
+                "saving": "Saving",
+                "delete": "Delete",
+                "deleting": "Deleting",
+                "change": "Change",
+                "changing": "Changing",
+                "connect": "Connect",
+                "disconnect": "Disconnect",
+                "disconnecting": "Disconnecting",
+                "add": "Add",
+                "adding": "Adding",
+                "done": "Done",
+                "cancel": "Cancel",
+                "yesChange": "Yes, change it!",
+                "ok": "OK",
+                "sync": "Sync"
+              },
+              "profile": {
+                "tabTitle": "Profile",
+                "congratsTooltip": "🎉 Congratulations! You've earned {{leetCoins}} LeetCoins.",
+                "updateSuccess": "Your profile has been successfully updated.",
+                "avatar": {
+                  "upload": "Upload a photo",
+                  "remove": "Remove photo",
+                  "modalTitle": "Upload Profile Avatar",
+                  "uploadErrTip": "Failed to upload avatar. Please try again later.",
+                  "uploadTooLargeTip": "The avatar file is too large. Please compress it before uploading.",
+                  "confirmDeleteAvatar": "Are you sure you want to reset your current avatar?"
+                },
+                "realName": {
+                  "label": "Name",
+                  "placeholder": "Your name (Required)",
+                  "errorRequired": "Name is a required field"
+                },
+                "birthday": {
+                  "label": "Birthday",
+                  "placeholder": "Your birthday",
+                  "tooltip": "This won't be displayed anywhere publicly",
+                  "errorInvalid": "Birthday is invalid"
+                },
+                "location": {
+                  "label": "Location",
+                  "placeholder": "Your residency location",
+                  "noLocationsLabel": "No locations found",
+                  "errorInvalid": "Location is invalid"
+                },
+                "headline": {
+                  "label": "Headline",
+                  "placeholder": "Tell us about yourself (interests, experience, etc.)",
+                  "errorMax": "Headline must be less than 100 characters",
+                  "errorInvalid": "Headline is invalid"
+                },
+                "website": {
+                  "label": "Website",
+                  "placeholder": "Your blog, portfolio, etc",
+                  "errorInvalid": "Website URL is not valid"
+                },
+                "github": {
+                  "label": "GitHub",
+                  "placeholder": "Your GitHub username",
+                  "errorInvalid": "GitHub URL is invalid",
+                  "labelInvalid": "Enter valid GitHub URL or username"
+                },
+                "linkedin": {
+                  "label": "LinkedIn",
+                  "placeholder": "Your Linkedln username",
+                  "errorInvalid": "LinkedIn URL is invalid",
+                  "labelInvalid": "Enter valid LinkedIn URL or username"
+                },
+                "college": {
+                  "label": "College",
+                  "placeholder": "Your school",
+                  "errorInvalid": "College is invalid"
+                },
+                "company": {
+                  "label": "Company",
+                  "placeholder": "Your company",
+                  "errorInvalid": "Company is invalid"
+                },
+                "jobTitle": {
+                  "label": "Job Title",
+                  "placeholder": "Your job title",
+                  "errorInvalid": "Job Title is invalid"
+                },
+                "techSkills": {
+                  "label": "Technical Skills",
+                  "placeholder": "Your skills",
+                  "commonSkills": "Common Skills",
+                  "errorMax": "The number of tags has reached the limit",
+                  "errorInvalid": "Technical Skills are invalid"
+                }
+              },
+              "resume": {
+                "tabTitle": "Resume"
+              },
+              "account": {
+                "tabTitle": "Account",
+                "accountInformation": {
+                  "sectionTitle": "Account Information",
+                  "username": {
+                    "label": "LeetCode ID",
+                    "placeholder": "Your LeetCode ID",
+                    "confirmChangeTitle": "Are you sure you want to change your LeetCode ID?",
+                    "confirmChangeContent": "You can only change your LeetCode ID once every 90 days.\nYou will no longer be able to login with your old LeetCode ID",
+                    "errorTitle": "Error",
+                    "errorIdTaken": "This LeetCode ID is already taken.",
+                    "successNotification": "LeetCode ID has been changed successfully!",
+                    "errorNotification": "Could not change LeetCode ID",
+                    "cannotChangeTip": "Username can only be changed once in 90 days"
+                  },
+                  "email": {
+                    "label": "Email",
+                    "primary": "Primary",
+                    "unconfirmed": "Unconfirmed",
+                    "setAsPrimary": "Set as Primary",
+                    "newEmail": "New Email",
+                    "confirm": "Confirm",
+                    "verificationSent": "Verification email has been sent",
+                    "verificationSuccess": "Success",
+                    "confirmPasswordContent": "Please enter your current password to change the primary email",
+                    "confirmPasswordPlaceholder": "Enter the password",
+                    "setPrimarySuccessfully": "Set successfully",
+                    "confirmDeleteTitle": "Delete",
+                    "confirmDeleteContent": "Are you sure you want to delete your email?",
+                    "errorEmailTaken": "Already associated with another user.",
+                    "confirmationSent": "Email confirmation sent."
+                  },
+                  "syncToChina": "Sync to China"
+                },
+                "setPassword": {
+                  "sectionTitle": "Set Password",
+                  "passwordNotSet": "You have not set the account password yet.",
+                  "successNotification": "Password has been changed successfully!",
+                  "errorNotification": "Could not change password.",
+                  "oldPassword": {
+                    "label": "Old Password",
+                    "placeholder": "Please enter password",
+                    "errorIncorrect": "Your old password was entered incorrectly.",
+                    "errorRequired": "Old Password is a required field"
+                  },
+                  "newPassword": {
+                    "label": "New Password",
+                    "placeholder": "Enter new password",
+                    "errorRequired": "New Password is a required field",
+                    "errorDuplicate": "Your new password is the same as your old password.",
+                    "errorAlphaNumeric": "Password must be alphanumeric",
+                    "errorTooCommon": "Password is too common",
+                    "errorMaxLength": "Password must be less than 150 characters",
+                    "errorMinLength": "Password must be at least 8 characters"
+                  },
+                  "confirmPassword": {
+                    "label": "Confirm New Password",
+                    "placeholder": "Re-enter new password",
+                    "errorIncorrect": "Your passwords don't match.",
+                    "errorRequired": "Confirm New Password is a required field"
+                  }
+                },
+                "socialAccounts": {
+                  "sectionTitle": "Social Accounts",
+                  "github": "GitHub",
+                  "linkedin": "LinkedIn",
+                  "facebook": "Facebook",
+                  "google": "Google",
+                  "confirmDisconnectTitle": "Disconnect",
+                  "confirmDisconnectContent": "Are you sure you want to disconnect your social account?"
+                }
+              },
+              "notifications": {
+                "tabTitle": "Notifications",
+                "email_notifications": "Email",
+                "site_notifications": "Site",
+                "announcements": {
+                  "sectionTitle": "Announcements",
+                  "importantAnnouncements": "Important Announcements",
+                  "featureAnnouncements": "Feature Announcements"
+                },
+                "award": {
+                  "sectionTitle": "Awards",
+                  "awardNotification": "Award Notification"
+                },
+                "contest": {
+                  "sectionTitle": "Contest",
+                  "rankingUpdates": "Global ranking updates",
+                  "badgeUpdates": "Contest badge updates",
+                  "announcements": "Contest announcements"
+                },
+                "discuss": {
+                  "sectionTitle": "Discuss",
+                  "newComment": "New comment notifications"
+                },
+                "other": {
+                  "sectionTitle": "Other",
+                  "other": "Other Notifications"
+                },
+                "promotions": {
+                  "sectionTitle": "Promotions",
+                  "thanksgiving": "Thanksgiving promotion",
+                  "other": "Other promotions"
+                },
+                "weeklyemail": {
+                  "sectionTitle": "Weekly Email",
+                  "weeklyRecommendations": "Weekly recommendations"
+                }
+              }
+            }
+          },
+          "zh": {
+            "common": {
+              "404": {
+                "title": "力扣",
+                "pageNotFound": "页面不存在",
+                "message": "抱歉！我们找不到您想访问的页面..."
+              },
+              "meta": {
+                "title": "",
+                "description": "",
+                "keywords": ""
+              },
+              "home": {
+                "title": "力扣 (LeetCode) 全球极客挚爱的技术成长平台",
+                "description": "海量技术面试题库，拥有算法、数据结构、系统设计等 1000+题目，帮助你高效提升编程技能，轻松拿下世界 IT 名企 Dream Offer。"
+              },
+              "loading": "加载中...",
+              "ok": "好",
+              "cancel": "取消",
+              "confirm": "确认",
+              "update": "更新",
+              "submit": "提交",
+              "more": "更多",
+              "save": "保存",
+              "netFailed": "网络错误",
+              "close": "关闭",
+              "header": {
+                "logo": {
+                  "url": "",
+                  "description": ""
+                },
+                "title": {
+                  "problemset-all": ""
+                },
+                "action": {
+                  "login": {
+                    "text": "",
+                    "url": ""
+                  }
+                }
+              },
+              "conjunctions": {
+                "and": "and",
+                "or": "或"
+              },
+              "pages": {
+                "leetcode": "LeetCode",
+                "explore": "学习",
+                "problems": "题库",
+                "interview": {
+                  "interview": "求职",
+                  "onlineInterview": "在线面试",
+                  "assessment": "Assessment"
+                },
+                "contest": "竞赛",
+                "discuss": "讨论",
+                "store": {
+                  "store": "商店",
+                  "redeem": "力扣周边",
+                  "premium": "Plus 会员",
+                  "shop": "精品商城"
+                },
+                "admin": {
+                  "admin": "管理员",
+                  "library": "题库",
+                  "translation": "翻译",
+                  "operations": "运营管理",
+                  "scores": "点数",
+                  "contribute": "贡献",
+                  "backend": "后台管理",
+                  "twoStepVerification": "二步验证",
+                  "internalContest": "Internal Contest Dashboard",
+                  "contestAdmin": "Contest Cheating Dashboard",
+                  "dangerZone": "Danger Zone",
+                  "review": "Review",
+                  "contestDashboard": "Contest Dashboard"
+                },
+                "mobileApp": "下载 App",
+                "playground": "Playground",
+                "myPlayground": "我的 Playground",
+                "signIn": "登录",
+                "register": "注册",
+                "signOut": "退出"
+              },
+              "userMenu": {
+                "renew": "续订",
+                "getPremium": "升级 Plus 会员享专属特权",
+                "tryNewFeatures": "体验新功能",
+                "orders": "订单",
+                "resume": "个人资料",
+                "translateQuestions": "题目以中文展示",
+                "translateQuestionsEn": "题目以英文显示",
+                "enterprise": "企业招聘",
+                "revertToOldVersion": "经典模式",
+                "categories": {
+                  "myList": "收藏夹",
+                  "notebook": "笔记本",
+                  "submissions": "我的题解",
+                  "session": "进度管理",
+                  "points": "积分",
+                  "progress": "进展分析"
+                },
+                "unmockUser": "退出 Mock User",
+                "account": "账号设置",
+                "appearance": "外观",
+                "appearanceContent": {
+                  "auto": "跟随系统",
+                  "light": "浅色",
+                  "dark": "深色"
+                }
+              },
+              "streakCounter": {
+                "finished": "干的好！明天再来挑战！",
+                "unfinished": "解决今天的「每日 1 题」，刷新你的连胜记录！",
+                "buyTimeTravelTicket": "购买补签卡",
+                "missedOneDayThisMonth": "这个月你错过了 1 天.",
+                "missedDaysThisMonth": "这个月你错过了 {{count}} 天."
+              },
+              "playground": {
+                "playground": "Playground",
+                "remainingPlaygrounds": "数量",
+                "renew": "升级",
+                "myPlaygrounds": "我的 Playgrounds",
+                "templates": {
+                  "consoleApplication": "控制台程序",
+                  "empty": "空白 Playground",
+                  "frontend": "前端程序",
+                  "machineLearning": "机器学习"
+                }
+              },
+              "links": {
+                "admin": {
+                  "scores": "/library/scores",
+                  "translation": "/contribution/translation/question/admin/",
+                  "operations": "/management"
+                },
+                "premium": "/premium",
+                "discuss": "/discuss",
+                "interview": "/company",
+                "shop": "https://detail.youzan.com/show/goods/newest?alias=271n43vr9hen7",
+                "onlineInterview": "https://leetcode.cn/interview",
+                "profileArticles": "/profile/articles",
+                "tryNewFeatures": "/new/",
+                "orders": "/settings/orders",
+                "explore": "/leetbook",
+                "resume": "/settings/profile",
+                "playground": "/playground",
+                "assessment": "/assessment/",
+                "account": "/settings"
+              },
+              "pagination": {
+                "perpage": " 条/页"
+              },
+              "expand": "展开",
+              "collapse": "收起",
+              "difficulty": {
+                "easy": "简单",
+                "medium": "中等",
+                "hard": "困难"
+              },
+              "data": {
+                "question": {
+                  "difficulty": {
+                    "easy": "简单",
+                    "medium": "中等",
+                    "hard": "困难"
+                  }
+                }
+              },
+              "markdown": {
+                "heading": "heading",
+                "quote": "Quote"
+              },
+              "mentions": {
+                "users": "用户",
+                "problems": "题目"
+              },
+              "confirmModal": {
+                "title": "确定执行此操作?",
+                "confirmBtn": "确定",
+                "cancelBtn": "取消"
+              },
+              "saving": "保存中...",
+              "saved": "保存成功",
+              "autoSaved": "已自动保存",
+              "loginRequired": "您尚未登录",
+              "verifiedRequired": "请绑定手机号或者邮箱后继续操作",
+              "phoneVerifiedRequired": "请绑定手机号后继续操作",
+              "maybeVerifiedRequired": "请绑定手机号后继续操作",
+              "copy": "复制",
+              "copyToEditor": "复制到编辑器",
+              "copied": "已复制",
+              "copyLink": "复制链接",
+              "zoomIn": "放大",
+              "zoomOut": "缩小",
+              "zoomReset": "适应窗口",
+              "viewMore": "查看更多",
+              "viewLess": "收起",
+              "viewDetails": "查看详情",
+              "code": "代码",
+              "diagram": "图表",
+              "loadingDiagram": "加载图表中...",
+              "diagramError": "图表加载失败",
+              "openDiagram": "打开",
+              "dailyCheckIn": "+1 每日登录",
+              "//maybeVerifiedRequired": "maybeVerifiedRequired means email in LCUS and phone in LCCN",
+              "easterEgg": {
+                "rewardMessage": "恭喜您获得了 10 积分，Happy LeetCoding!"
+              },
+              "survey": {
+                "veryDissatisfied": "非常不满意",
+                "verySatisfied": "非常满意",
+                "next": "下一题",
+                "continue": "继续",
+                "submit": "提交",
+                "questionNo": "问卷题目 {{current}}/{{total}}",
+                "thanksMsg": "🎉 感谢您的反馈!"
+              },
+              "qdNav": {
+                "backTitle": "题库",
+                "expandPanel": "展开面板",
+                "expandNamePanel": "展开{{listName}}列表",
+                "preQuestion": "上一题",
+                "nextQuestion": "下一题",
+                "next": "下一题",
+                "prev": "上一题",
+                "pickOne": "随机一题",
+                "openInNewTab": "在新的标签页打开"
+              },
+              "premiumModal": {
+                "learnMore": "了解更多权益",
+                "subscribe": "升级 Plus 会员"
+              },
+              "truncatedContent": {
+                "viewAll": "查看全部",
+                "viewLess": "收起",
+                "openRaw": "打开源码",
+                "showMore": "显示更多",
+                "showLess": "显示更少"
+              },
+              "chromeNotSupport": "当前浏览器版本较低，可能导致部分功能无法正常使用。建议升级至最新版本，享受更流畅的体验。",
+              "lcAppWebviewNotSupport": "检测到当前内置浏览器版本过低，可能无法正常预览页面。您可以复制链接并在浏览器中打开查看。",
+              "medal": {
+                "metadataTitle": "勋章 - 力扣（LeetCode）",
+                "congratulation": "恭喜获得",
+                "genPoster": "生成海报",
+                "genPostering": "生成中...",
+                "saveImgMobile": "长按图片保存",
+                "saveImgPc": "右键保存图片",
+                "medalEmpty": "暂无可领取的勋章"
+              },
+              "recordEventType": {
+                "start": "开始",
+                "switchQuestion": "切换问题",
+                "switchLang": "切换语言",
+                "pageVisible": "切换页面",
+                "interpretCode": "运行代码",
+                "submitCode": "提交代码",
+                "end": "结束",
+                "input": "输入",
+                "undo": "撤销",
+                "redo": "重做",
+                "paste": "外部粘贴",
+                "changeCursor": "改变光标",
+                "debug": "调试",
+                "debugEnd": "结束调试"
+              },
+              "codeReplay": {
+                "title": "代码回放",
+                "redirectContent": "此非力扣中国用户，前往 leetcode.com 查看详情?",
+                "doNotShowAgain": "不再提示",
+                "eventHistory": "回放事件",
+                "skipInactive": "跳过非活跃事件",
+                "noCodeResults": "没有代码结果",
+                "size": "大小",
+                "chars": "字符",
+                "leaveContestPageN": "离开竞赛作答页",
+                "returnContestPage": "回到竞赛作答页",
+                "speed": "播放速度",
+                "showEventsIndicator": "显示事件定位点",
+                "settings": "设定",
+                "toggleEventList": "切换显示事件列表"
+              },
+              "verified": "已认证",
+              "phonePlaceholder": "请输入手机号",
+              "searchPlaceholder": "搜索...",
+              "signIn": "登录",
+              "block": "拉黑",
+              "unblock": "解除拉黑",
+              "blockDescription": "对方将无法关注你，无法查看或回复你的主页、帖子、题解和评论，也无法与你互动。对方不会收到被拉黑的通知。你也不会再看到对方的帖子、题解和评论。"
+            },
+            "public-profile": {
+              "meta": {
+                "title": "{{username}} - 力扣（LeetCode）",
+                "description": "View {{username}}'s profile on LeetCode, the world's largest programming community.",
+                "keywords": "",
+                "ogImage": "https://leetcode.com/static/images/LeetCode_Sharing.png"
+              },
+              "basic": {
+                "aboutMe": "个人简介",
+                "followers": "关注者",
+                "following": "关注",
+                "follow": "关注",
+                "followed": "已关注",
+                "mutualFollow": "互相关注",
+                "unfollow": "取消关注",
+                "editProfile": "编辑个人资料",
+                "followingListInvisible": "该用户已隐藏关注列表",
+                "followerListInvisible": "该用户已隐藏粉丝列表"
+              },
+              "problemsSolved": {
+                "solved": "解决问题",
+                "solvedProblems": "解题数量",
+                "notEnoughData": "暂无数据",
+                "beats": "击败用户",
+                "difficulty": {
+                  "easy": "简单",
+                  "medium": "中等",
+                  "hard": "困难"
+                }
+              },
+              "community": {
+                "lastWeek": "上周",
+                "lastDay": "昨日",
+                "title": "成就贡献",
+                "views": "阅读总数",
+                "vote": "获得点赞",
+                "level": "声望等级",
+                "reputation": "声望",
+                "favorite": "获得收藏",
+                "solution": "题解",
+                "discuss": "讨论"
+              },
+              "submissionHeatMap": {
+                "submission": "过去一年共提交",
+                "submissionInYear": "{{year}} 年的提交",
+                "totalActiveDays": "累计提交天数",
+                "maxStreak": "连续提交",
+                "utcTimezone": "提交按 UTC 时间记录",
+                "timePeriod": {
+                  "current": "过去一年"
+                }
+              },
+              "languages": {
+                "title": "语言",
+                "notEnoughData": "暂无数据",
+                "calculatingData": "计算中...",
+                "problemsSolved_one": "解题数 ",
+                "problemsSolved_other": "解题数 ",
+                "showMore": "查看更多",
+                "showLess": "收起"
+              },
+              "skills": {
+                "title": "技能",
+                "advanced": "高级",
+                "intermediate": "进阶",
+                "fundamental": "基础",
+                "notEnoughData": "暂无数据",
+                "showMore": "查看更多",
+                "showLess": "收起"
+              },
+              "recentsList": {
+                "showMore": "加载更多",
+                "allSubmissions": "所有提交记录",
+                "recentAc": "最近通过",
+                "solutions": "题解",
+                "discuss": "讨论发布",
+                "mostVotes": "Most Votes",
+                "mostRecent": "Most Recent",
+                "votes": "Votes",
+                "recent": "Recent",
+                "noSubmissions": "",
+                "noSolution": "",
+                "noDiscuss": "",
+                "viewAll": "View all",
+                "problemList": "题单",
+                "viewAllList": "所有题单",
+                "noListText": "暂无公开题单",
+                "seeViewAll": "查看所有题单"
+              },
+              "badges": {
+                "badges": "勋章成就",
+                "lockedBadge": "即将获得",
+                "mostRecentBadge": "最近获得",
+                "dailyChallenge": "每日打卡",
+                "historyAwards": "历史勋章",
+                "showMoreBadges": "查看更多勋章",
+                "badgeList": "勋章列表",
+                "competitionMedals": "竞赛勋章",
+                "dailyMedals": "打卡勋章",
+                "studyPlanMedals": "学习计划勋章",
+                "activityMedals": "活动勋章",
+                "annualMedals": "年度勋章",
+                "submissionMedals": "提交天数",
+                "active": "已佩戴",
+                "notActive": "未佩戴"
+              },
+              "contestGraph": {
+                "contestBadge": {
+                  "self": "需要达到 top {{percentage}}% 才能重新获得勋章",
+                  "anonymous": "曾获得"
+                },
+                "level": "当前段位",
+                "historyLevel": "历史段位",
+                "contest": "竞赛场次",
+                "rank": "排名",
+                "solved": "得分",
+                "score": "得分",
+                "contestRating": "竞赛分数",
+                "globalRanking": "全球排名",
+                "localRanking": "全国排名",
+                "attended": "参赛总数",
+                "unlockGlobalRanking": "再参加 {{count}} 场竞赛即可参与全球排名。"
+              },
+              "histogram": {
+                "top": "Top",
+                "numberOfUsers": "{{numberOfUsers}} 用户"
+              },
+              "feedback": {
+                "feedback": "问题反馈",
+                "revertToOld": "返回旧版"
+              },
+              "socialProfile": {
+                "uploadAvatar": "上传头像",
+                "cancel": "取消",
+                "save": "保存"
+              },
+              "blockerUserFollowTip": "您已被该用户拉黑，无法关注。",
+              "blockedPlaceHolder": "你已拉黑 {{username}}",
+              "blockerPlaceHolder": " 您已被该用户拉黑，无法查看其主页。"
+            },
+            "edit-profile": {
+              "meta": {
+                "profile": {
+                  "title": "个人资料 - 力扣（LeetCode）"
+                },
+                "resume": {
+                  "title": "简历信息 - 力扣（LeetCode）"
+                },
+                "preview-resume": {
+                  "title": "简历预览 - 力扣（LeetCode）"
+                },
+                "account": {
+                  "title": "账户信息 - 力扣（LeetCode）"
+                },
+                "notifications": {
+                  "title": "通知设置 - 力扣（LeetCode）"
+                }
+              },
+              "buttons": {
+                "submit": "提交",
+                "submitting": "提交中",
+                "save": "保存",
+                "saving": "保存中",
+                "delete": "删除",
+                "deleting": "删除中",
+                "change": "变更",
+                "changing": "变更中",
+                "connect": "关联",
+                "disconnect": "取消关联",
+                "disconnecting": "取消关联中",
+                "add": "添加",
+                "adding": "添加中",
+                "done": "完成",
+                "cancel": "取消",
+                "yesChange": "保存成功！",
+                "ok": "确认",
+                "sync": "同步",
+                "next": "下一步",
+                "edit": "编辑",
+                "fold": "收起",
+                "unfold": "展开"
+              },
+              "tip": {
+                "optional": "（选填）",
+                "errorSelectRequired": "请选择",
+                "errorInputRequired": "请填写",
+                "optionalFieldsTip": "选填字段：GitHub、个人网站、技能",
+                "optionalInfo": "选填信息",
+                "StartEndTimeValidate": "开始时间需小于结束时间",
+                "startedAtPlaceholder": "开始时间",
+                "endedAtPlaceholder": "结束时间"
+              },
+              "profile": {
+                "tabTitle": "个人资料",
+                "congratsTooltip": "🎉 🎉 恭喜你获得 {{leetCoins}} LeetCoins！",
+                "updateSuccess": "个人资料更新成功",
+                "avatar": {
+                  "upload": "上传头像",
+                  "remove": "删除头像",
+                  "modalTitle": "上传头像",
+                  "uploadErrTip": "上传头像失败，请稍后重试",
+                  "uploadTooLargeTip": "上传头像文件过大，请压缩后上传",
+                  "confirmDeleteAvatar": "确认重置当前头像吗？"
+                },
+                "realName": {
+                  "label": "昵称",
+                  "placeholder": "昵称（必填项）",
+                  "errorRequired": "昵称为必填项"
+                },
+                "gender": {
+                  "label": "性别"
+                },
+                "birthday": {
+                  "label": "生日",
+                  "placeholder": "请选择",
+                  "tooltip": "生日将不会对外展示",
+                  "errorInvalid": "生日格式错误"
+                },
+                "location": {
+                  "label": "现居地",
+                  "placeholder": "请选择",
+                  "noLocationsLabel": "未找到相关地区",
+                  "errorInvalid": "现居地格式错误"
+                },
+                "headline": {
+                  "label": "个人介绍",
+                  "placeholder": "关于你的个性、兴趣或经验...",
+                  "errorMax": "个人介绍需少于 100 字",
+                  "errorInvalid": "个人介绍格式错误"
+                },
+                "website": {
+                  "label": "个人网站",
+                  "placeholder": "你的个人网站、博客或作品集等",
+                  "errorInvalid": "个人网站地址格式错误"
+                },
+                "github": {
+                  "label": "GitHub",
+                  "placeholder": "用户名",
+                  "errorInvalid": "GitHub 地址格式错误",
+                  "labelInvalid": "请输入有效的 GitHub 链接或用户名"
+                },
+                "college": {
+                  "label": "就读学校",
+                  "placeholder": "最高学历学校",
+                  "errorInvalid": "学校名不正确"
+                },
+                "company": {
+                  "label": "所在公司",
+                  "placeholder": "最近工作公司",
+                  "errorInvalid": "公司名不正确"
+                },
+                "jobTitle": {
+                  "label": "职位",
+                  "placeholder": "你的职位",
+                  "errorInvalid": "职位不正确"
+                },
+                "major": {
+                  "label": "专业",
+                  "placeholder": "你的专业",
+                  "errorInvalid": "专业不正确"
+                },
+                "techSkills": {
+                  "label": "技能标签",
+                  "placeholder": "你的技能标签",
+                  "commonSkills": "常用标签",
+                  "errorMax": "技能标签数超过限制",
+                  "errorInvalid": "技能标签不正确"
+                }
+              },
+              "resume": {
+                "tabTitle": "简历信息",
+                "guideTitle": "定制你的理想工作机会",
+                "guideInfo": "轻松完善简历，迎接下一份工作机会",
+                "guideBtnText": "手动填写 (5 分钟)",
+                "intention": "求职意向",
+                "workExperience": "工作经历",
+                "education": "教育经历",
+                "basic": "基本信息",
+                "jobSeekingStatus": {
+                  "label": "求职状态",
+                  "preparation": "准备求职面试",
+                  "lookat": "看看求职机会",
+                  "ignored": "暂不考虑机会"
+                },
+                "occupation": {
+                  "label": "身份",
+                  "student": "学生",
+                  "professional": "职场人"
+                },
+                "expectedJob": {
+                  "label": "意向岗位",
+                  "placeholder": "输入或选择"
+                },
+                "expectedLocation": {
+                  "label": "期望地区",
+                  "placeholder": "输入或选择",
+                  "noLocationsLabel": "未找到相关地区",
+                  "errorInvalid": "现居地格式错误"
+                },
+                "location": {
+                  "label": "现居地",
+                  "placeholder": "输入或选择",
+                  "noLocationsLabel": "未找到相关地区",
+                  "errorInvalid": "现居地格式错误"
+                },
+                "salary": {
+                  "label": "期望薪资"
+                },
+                "company": {
+                  "label": "公司名称",
+                  "placeholder": "请填写公司名称"
+                },
+                "job": {
+                  "label": "职位名称",
+                  "placeholder": "输入或选择"
+                },
+                "workTime": {
+                  "label": "在职时间"
+                },
+                "workExperienceTip": "你的信息将对该公司不可见",
+                "skipWorkExperience": "尚无工作经验，跳过",
+                "school": {
+                  "label": "学校名称",
+                  "placeholder": "请填写学校名称"
+                },
+                "degree": {
+                  "label": "学历",
+                  "placeholder": "请选择你的学历",
+                  "admission": "统招"
+                },
+                "eduTime": {
+                  "label": "就读时间",
+                  "joinAtPlaceholder": "开始时间",
+                  "endedAtPlaceholder": "结束时间"
+                },
+                "realName": {
+                  "label": "姓名",
+                  "placeholder": "真实姓名"
+                },
+                "phone": {
+                  "label": "手机号",
+                  "placeholder": "请输入手机号"
+                },
+                "email": {
+                  "label": "邮箱",
+                  "placeholder": "请输入邮箱地址"
+                },
+                "birthday": {
+                  "label": "出生日期",
+                  "placeholder": "请选择"
+                },
+                "workedAt": {
+                  "label": "参加工作时间",
+                  "placeholder": "请选择"
+                },
+                "description": {
+                  "label": "职责业绩",
+                  "placeholder": "90%的招聘方会通过职责业绩了解您的工作能力进而决定面试几率。 (选填）"
+                },
+                "eduDescription": {
+                  "label": "在校经历",
+                  "placeholder": "请描述该项目 (选填）"
+                }
+              },
+              "account": {
+                "tabTitle": "账户信息",
+                "accountInformation": {
+                  "sectionTitle": "Account Information",
+                  "username": {
+                    "label": "LeetCode ID",
+                    "placeholder": "Your LeetCode ID",
+                    "confirmChangeTitle": "Are you sure you want to change your LeetCode ID?",
+                    "confirmChangeContent": "You can only change your LeetCode ID once every 90 days.\nYou will no longer be able to login with your old LeetCode ID",
+                    "errorTitle": "Error",
+                    "errorIdTaken": "This LeetCode ID is already taken.",
+                    "successNotification": "LeetCode ID has been changed successfully!",
+                    "errorNotification": "Could not change LeetCode ID",
+                    "cannotChangeTip": "Username can only be changed once in 90 days"
+                  },
+                  "email": {
+                    "label": "Email",
+                    "primary": "Primary",
+                    "unconfirmed": "Unconfirmed",
+                    "setAsPrimary": "Set as Primary",
+                    "newEmail": "New Email",
+                    "confirm": "Confirm",
+                    "verificationSent": "Verification email has been sent",
+                    "verificationSuccess": "Success",
+                    "confirmPasswordContent": "Please enter your current password to change the primary email",
+                    "confirmPasswordPlaceholder": "Enter the password",
+                    "setPrimarySuccessfully": "Set successfully",
+                    "confirmDeleteTitle": "Delete",
+                    "confirmDeleteContent": "Are you sure you want to delete your email?",
+                    "errorEmailTaken": "Already associated with another user.",
+                    "confirmationSent": "Email confirmation sent."
+                  },
+                  "syncToChina": "Sync to China"
+                },
+                "setPassword": {
+                  "sectionTitle": "Set Password",
+                  "passwordNotSet": "You have not set the account password yet.",
+                  "successNotification": "Password has been changed successfully!",
+                  "errorNotification": "Could not change password.",
+                  "oldPassword": {
+                    "label": "Old Password",
+                    "placeholder": "Please enter password",
+                    "errorIncorrect": "Your old password was entered incorrectly.",
+                    "errorRequired": "Old Password is a required field"
+                  },
+                  "newPassword": {
+                    "label": "New Password",
+                    "placeholder": "Enter new password",
+                    "errorRequired": "New Password is a required field",
+                    "errorDuplicate": "Your new password is the same as your old password.",
+                    "errorAlphaNumeric": "Password must be alphanumeric",
+                    "errorTooCommon": "Password is too common",
+                    "errorMaxLength": "Password must be less than 150 characters",
+                    "errorMinLength": "Password must be at least 8 characters"
+                  },
+                  "confirmPassword": {
+                    "label": "Confirm New Password",
+                    "placeholder": "Re-enter new password",
+                    "errorIncorrect": "Your passwords don't match.",
+                    "errorRequired": "Confirm New Password is a required field"
+                  }
+                },
+                "socialAccounts": {
+                  "sectionTitle": "Social Accounts",
+                  "github": "GitHub",
+                  "linkedin": "LinkedIn",
+                  "facebook": "Facebook",
+                  "google": "Google",
+                  "confirmDisconnectTitle": "Disconnect",
+                  "confirmDisconnectContent": "Are you sure you want to disconnect your social account?"
+                }
+              },
+              "notifications": {
+                "tabTitle": "通知设置",
+                "email_notifications": "Email",
+                "site_notifications": "Site",
+                "announcements": {
+                  "sectionTitle": "Announcements",
+                  "importantAnnouncements": "Important Announcements",
+                  "featureAnnouncements": "Feature Announcements"
+                },
+                "award": {
+                  "sectionTitle": "Awards",
+                  "awardNotification": "Award Notification"
+                },
+                "contest": {
+                  "sectionTitle": "Contest",
+                  "rankingUpdates": "Global ranking updates",
+                  "badgeUpdates": "Contest badge updates",
+                  "announcements": "Contest announcements"
+                },
+                "discuss": {
+                  "sectionTitle": "Discuss",
+                  "newComment": "New comment notifications"
+                },
+                "other": {
+                  "sectionTitle": "Other",
+                  "other": "Other Notifications"
+                },
+                "promotions": {
+                  "sectionTitle": "Promotions",
+                  "thanksgiving": "Thanksgiving promotion",
+                  "other": "Other promotions"
+                },
+                "weeklyemail": {
+                  "sectionTitle": "Weekly Email",
+                  "weeklyRecommendations": "Weekly recommendations"
+                }
+              }
+            }
+          }
+        },
+        "initialLocale": "en",
+        "ns": [
+          "common",
+          "public-profile",
+          "edit-profile"
+        ],
+        "userConfig": {
+          "i18n": {
+            "defaultLocale": "zh",
+            "locales": [
+              "en",
+              "zh"
+            ]
+          },
+          "react": {
+            "useSuspense": false
+          },
+          "reloadOnPrerender": false,
+          "default": {
+            "i18n": {
+              "defaultLocale": "zh",
+              "locales": [
+                "en",
+                "zh"
+              ]
+            },
+            "react": {
+              "useSuspense": false
+            },
+            "reloadOnPrerender": false
+          }
+        }
+      }
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0 Safari/537.36",
+    "__N_SSP": true
+  },
+  "page": "/u/[username]",
+  "query": {
+    "username": "SatyaKavisetti"
+  },
+  "buildId": "aop3FVscN1brjJoEq6XRM",
+  "isFallback": false,
+  "isExperimentalCompile": false,
+  "gssp": true,
+  "appGip": true,
+  "scriptLoader": []
+}
